@@ -49,13 +49,13 @@ elif lspci | grep -qi "vga .* intel"; then
 fi
 
 echo "== Installing official packages =="
-sudo pacman -S --needed --noconfirm \
+sudo pacman -Syu --needed --noconfirm \
 base-devel sudo nano wget curl htop btop unzip p7zip rsync man-db man-pages networkmanager \
 kdeconnect okular kcalc ark \
 mpv ffmpeg gstreamer gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav \
 steam gamemode mangohud lib32-mangohud $GPU_DRIVERS \
 lutris gamescope wine wine-mono wine-gecko samba \
-npm nodejs python python-pip gcc pnpm deno typescript ripgrep fd clang cmake make docker docker-compose-plugin jq github-cli tmux \
+npm nodejs python python-pip gcc pnpm deno typescript ripgrep fd clang cmake make docker docker-compose jq github-cli tmux \
 ttf-dejavu ttf-liberation noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-jetbrains-mono \
 unrar xdg-utils \
 flatpak flatpak-kcm timeshift fastfetch cups bluez bluez-utils \
